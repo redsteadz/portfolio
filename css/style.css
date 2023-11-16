@@ -149,16 +149,6 @@ html{
 
 }
 
-@media (max-width: 1150px) {
-  .positionLeft{
-    position: relative;
-  }
-  .containerIntro{
-    display: block;
-  }
-  
-}
-
 .introLeft{
   width: 30vw;
 }
@@ -170,18 +160,6 @@ html{
 }
 .introLeft>.positionLeft>div>ul{
   /* list-style: none; */
-}
-
-.introLeft>.positionLeft>div>ul::before{
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 6px;
-  height: 5px;
-  width: 5px;
-  border: 1px solid #f9dd94;
-  border-width: 2px 2px 0 0;
-  transform: rotate(45deg);
 }
 
 .introLeft > .positionLeft > div > ul > li{
@@ -249,3 +227,24 @@ var(--blue);
 }
 
 
+@media (max-width: 1150px) {
+  .positionLeft{
+    position: relative;
+    width: 95vw;
+    text-align: center;
+  }
+
+.introLeft>.positionLeft>div>p{
+    width: 95vw;
+  }
+  .containerIntro{
+    display: block;
+  }
+  .introRight{
+    width: 95vw;
+  }
+  .social{
+    text-align: center;
+    margin-top: 8px;
+  }
+}
