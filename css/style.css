@@ -101,6 +101,11 @@ html{
     width: 65vw;
   }
 
+.introRight>h3{
+  text-align: center;
+  margin-top: 30px;
+  border-bottom: dashed var(--blue) 1px;
+  }
 .blog{
   display: flex;
   margin-top: 40px;
@@ -159,12 +164,12 @@ html{
 }
 
 .introLeft>.positionLeft>div>p{
-  width: 30vw;
+  width: 17vw;
   font-size: 0.9em;
   margin-bottom: 20px;
 }
 .introLeft>.positionLeft>div>ul{
-  list-style: none;
+  /* list-style: none; */
 }
 
 .introLeft>.positionLeft>div>ul::before{
@@ -179,6 +184,9 @@ html{
   transform: rotate(45deg);
 }
 
+.introLeft > .positionLeft > div > ul > li{
+  text-align: center;
+}
 .introLeft > .positionLeft > div > ul > li > a {
   text-decoration: none;
   display: inline-block;
@@ -205,10 +213,34 @@ var(--blue);
   transform-origin: bottom left;
 }
 
+.social{
+  margin-top: 30vh;
+}
+
+.social_cont{
+  margin: 10px;
+}
+
+.social_cont>a{
+  font-size: 1.2em;
+}
+
+.gIcon{
+  width: 30px;
+  display: inline;
+  height: 30px;
+  fill: var(--blue);
+  color: var(--blue);
+}
+.social_cont{
+  display: flex;
+  align-items: center;
+}
+
 .Projects{
   text-align: center;
 }
-.Projects>h4{
+.Projects>h3{
   border-bottom: dashed var(--blue) 1px;
 }
 
