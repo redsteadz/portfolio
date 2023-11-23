@@ -109,11 +109,30 @@ html{
 .blog{
   display: flex;
   margin-top: 40px;
+  transition: all 0.3s ease-in;
+  border: transparent solid 2px;
+  box-sizing: border-box;
 }
 
 .blogContent>h4{
   font-size: medium;
   display: inline;
+}
+
+.blogContent>p{
+  overflow: hidden;
+  height: 60px;
+  transition: all 2s;
+}
+
+.blog:hover{
+  border: var(--sky) solid 2px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.blog:hover .blogContent>p{
+  height: 150px;
 }
 
 .tags{
@@ -140,7 +159,7 @@ html{
 
 .date{
   font-size: small;
-  margin-right: 20px;
+  margin: 5px 20px 5px 20px;
   white-space: nowrap;
 }
 
@@ -158,9 +177,9 @@ html{
   font-size: 0.9em;
   margin-bottom: 20px;
 }
-.introLeft>.positionLeft>div>ul{
-  /* list-style: none; */
-}
+/* .introLeft>.positionLeft>div>ul{ */
+/*   /* list-style: none; */ 
+/* } */
 
 .introLeft > .positionLeft > div > ul > li{
   text-align: center;
@@ -192,7 +211,9 @@ var(--blue);
 }
 
 .social{
-  margin-top: 30vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .social_cont{
@@ -206,10 +227,17 @@ var(--blue);
 .gIcon{
   width: 30px;
   display: inline;
-  height: 30px;
   fill: var(--blue);
   color: var(--blue);
+  cursor: pointer;
+  transition: all 0.3s ease-in;
 }
+
+.gIcon:hover{
+  fill: var(--sky);
+  color: var(--sky);
+}
+
 .social_cont{
   display: flex;
   align-items: center;
@@ -221,9 +249,31 @@ var(--blue);
 .Projects>h3{
   border-bottom: dashed var(--blue) 1px;
 }
-
 .slide>img{
-  width: 50vw;
+  width: 800px;
+}
+.slides{
+  display: flex;
+  flex-direction: row;
+  overflow-y: hidden;
+  height: 700px;
+}
+
+.slides::-webkit-scrollbar {
+  width: 3px; /* Set the width of the scrollbar */
+  height: 8px;
+}
+
+/* Handle portion of the scrollbar */
+.slides::-webkit-scrollbar-thumb {
+  background-color: var(--blue); /* Color of the scrollbar handle */
+  border-radius: 4px; /* Rounded corners for the handle */
+}
+
+/* Track portion of the scrollbar */
+.slides::-webkit-scrollbar-track {
+  background-color: var(--surface); /* Color of the scrollbar track */
+  border-radius: 4px; /* Rounded corners for the track */
 }
 
 
@@ -245,6 +295,11 @@ var(--blue);
   }
   .social{
     text-align: center;
+    display: flex;
+    flex-direction: row;
     margin-top: 8px;
+  }
+  .slide{
+    width: 450px;
   }
 }
