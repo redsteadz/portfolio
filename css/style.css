@@ -1,9 +1,20 @@
-*{
-  font-family:Oxygen Mono, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen Mono, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+* {
+  font-family:
+    Oxygen Mono,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen Mono,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
   margin: 0;
   padding: 0;
   color: var(--white);
-
 }
 ::-webkit-scrollbar {
   width: 8px; /* Set the width of the scrollbar */
@@ -21,27 +32,35 @@
   border-radius: 4px; /* Rounded corners for the track */
 }
 
-body{
+body {
   background: var(--base);
 }
 
 
-
-html{
+html {
   scroll-behavior: smooth;
 }
 
-
-:root{
-  --base: #1E1D2D;
+:root {
+  --base: #11111B;
   --blue: #89b4fa;
-  --surface:#45475a;
-  --sky:#89dceb;
-  --white:#f5e0dc;
+  --surface: #45475a;
+  --sky: #89dceb;
+  --white: #f5e0dc;
   --darkBlue: blue;
 }
 
-.nav-bar{
+/* Light Mode */
+/* :root { */
+/*   --base: #f5f5f5;     /* Light gray as the base color */ */
+/*   --blue: #007acc;     /* A shade of blue for accents */ */
+/*   --surface: #ffffff;   /* White as the surface/background color */ */
+/*   --sky: #87CEEB;      /* Light sky blue color */ */
+/*   --white: #11111B;    /* Dark color for text or accents on light background */ */
+/*   --darkBlue: #0000ff; /* Dark blue color */ */
+/* } */
+
+.nav-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -49,64 +68,76 @@ html{
   background: var(--base);
 }
 
-.mainBlock{
-  margin-top:50px ;
+.mainBlock {
+  margin-top: 50px;
 }
 
-#nav-items{
+#nav-items {
   color: var(--white);
   margin-right: 30px;
 }
 
-.left{
-    display: flex;
-    flex-direction: row;
-    width: 33vw;
-  }
+.left {
+  display: flex;
+  flex-direction: row;
+  width: 33vw;
+}
 
-.center{
-    display: flex;
-  }
+.center {
+  display: flex;
+}
 
-  .right{
-    width: 33vw;
-  }
+.right {
+  width: 33vw;
+}
 
-.header{
-    color: var(--white);
-  }
+.header {
+  color: var(--white);
+}
 
-.menu_icon{
+.menu_icon {
   color: var(--white);
   margin-right: 50px;
 }
 
-.main{
-    margin: 0 5vw 0 5vw;
-  }
-.positionLeft>div>h2{
+.main {
+  margin: 0 5vw 0 5vw;
+}
+.positionLeft > div > h2 {
   font-family: Lobster;
   font-size: 3em;
+  color: var(--base);
+text-shadow: 0 0 5px var(--sky), 0 0 20px var(--sky), 0 0 30px var(--sky);
 }
 
+.nav{
+  text-shadow: 0 0 5px var(--sky), 0 0 20px var(--sky), 0 0 30px var(--sky);
+}
 
 /*Intro Secttion*/
-.containerIntro{
-    display: flex;
-    justify-content: space-between;
+.containerIntro {
+  display: flex;
+  justify-content: space-between;
+}
+.introRight {
+  margin-top: 60px;
+  width: 65vw;
+}
 
-  }
-.introRight{
-    margin-top: 60px;
-    width: 65vw;
-  }
-
-.introRight>h3{
+.introRight > h3 {
   text-align: center;
   margin-top: 30px;
   border-bottom: dashed var(--blue) 1px;
-  }
-.blog{
+}
+
+.section{
+text-shadow: 0 0 5px var(--sky), 0 0 20px var(--sky), 0 0 30px var(--sky);
+  font-size: 2em;
+  color: var(--base);
+  font-family: Lobster;
+}
+
+.blog {
   display: flex;
   margin-top: 40px;
   transition: all 0.3s ease-in;
@@ -114,38 +145,41 @@ html{
   box-sizing: border-box;
 }
 
-.blogContent>h4{
+.blogContent > h4{
   font-size: medium;
   display: inline;
+text-shadow: 0 0 5px var(--sky), 0 0 20px var(--sky), 0 0 30px var(--sky);
 }
 
-.blogContent>p{
+
+.blogContent > p {
   overflow: hidden;
-  height: 60px;
-  transition: all 2s;
+  max-height: 60px;
+  transition: all 0.3s;
 }
 
-.blog:hover{
+.blog:hover {
   border: var(--sky) solid 2px;
   border-radius: 20px;
   cursor: pointer;
 }
 
-.blog:hover .blogContent>p{
-  height: 150px;
+.blog:hover .blogContent > p {
+  max-height: 150px;
 }
 
-.tags{
+.tags {
   display: flex;
   flex-direction: row;
   list-style: none;
   font-size: small;
   margin: 7px 7px 7px 0;
 }
-.tags>li{
+.tags > li {
   background: var(--blue);
   font-weight: bold;
-  padding: 0 5px 0 5px ;
+  padding: 0 5px 0 5px;
+  max-height: 20px;
   border-radius: 10px;
   margin-right: 7px;
   color: var(--base);
@@ -153,35 +187,34 @@ html{
   transition: text-decoration 0.3s ease-in;
 }
 
-.tags>li::hover{
+.tags > li::hover {
   text-decoration: underline;
 }
 
-.date{
+.date {
   font-size: small;
   margin: 5px 20px 5px 20px;
   white-space: nowrap;
 }
 
-.positionLeft{
+.positionLeft {
   position: fixed;
-
 }
 
-.introLeft{
+.introLeft {
   width: 30vw;
 }
 
-.introLeft>.positionLeft>div>p{
+.introLeft > .positionLeft > div > p {
   width: 17vw;
   font-size: 0.9em;
   margin-bottom: 20px;
 }
 /* .introLeft>.positionLeft>div>ul{ */
-/*   /* list-style: none; */ 
+/*   /* list-style: none; */
 /* } */
 
-.introLeft > .positionLeft > div > ul > li{
+.introLeft > .positionLeft > div > ul > li {
   text-align: center;
 }
 .introLeft > .positionLeft > div > ul > li > a {
@@ -191,40 +224,38 @@ html{
 }
 
 .introLeft > .positionLeft > div > ul > li > a:after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   transform: scaleX(0);
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: 
-var(--blue);
+  background-color: var(--blue);
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
-
 
 .introLeft > .positionLeft > div > ul > li > a:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
 
-.social{
+.social {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-.social_cont{
+.social_cont {
   margin: 10px;
 }
 
-.social_cont>a{
+.social_cont > a {
   font-size: 1.2em;
 }
 
-.gIcon{
+.gIcon {
   width: 30px;
   display: inline;
   fill: var(--blue);
@@ -233,26 +264,26 @@ var(--blue);
   transition: all 0.3s ease-in;
 }
 
-.gIcon:hover{
+.gIcon:hover {
   fill: var(--sky);
   color: var(--sky);
 }
 
-.social_cont{
+.social_cont {
   display: flex;
   align-items: center;
 }
 
-.Projects{
+.Projects {
   text-align: center;
 }
-.Projects>h3{
+.Projects > h3 {
   border-bottom: dashed var(--blue) 1px;
 }
-.slide>img{
+.slide > img {
   width: 800px;
 }
-.slides{
+.slides {
   display: flex;
   flex-direction: row;
   overflow-y: hidden;
@@ -276,30 +307,29 @@ var(--blue);
   border-radius: 4px; /* Rounded corners for the track */
 }
 
-
 @media (max-width: 1150px) {
-  .positionLeft{
+  .positionLeft {
     position: relative;
     width: 95vw;
     text-align: center;
   }
 
-.introLeft>.positionLeft>div>p{
+  .introLeft > .positionLeft > div > p {
     width: 95vw;
   }
-  .containerIntro{
+  .containerIntro {
     display: block;
   }
-  .introRight{
+  .introRight {
     width: 95vw;
   }
-  .social{
+  .social {
     text-align: center;
     display: flex;
     flex-direction: row;
     margin-top: 8px;
   }
-  .slide{
+  .slide {
     width: 450px;
   }
 }
