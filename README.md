@@ -12,7 +12,7 @@ This repository hosts the code for my personal portfolio site. The live site sho
 
 ## How to Access
 
-To view my portfolio, simply visit [https://your-username.github.io](https://redsteadz.github.io/portfolio/).
+To view my portfolio, simply visit [https://redsteadz.github.io/portfolio](https://redsteadz.github.io/portfolio/).
 
 ## Contact
 
