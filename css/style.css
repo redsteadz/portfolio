@@ -60,6 +60,7 @@ html {
 /*   --darkBlue: #0000ff; /* Dark blue color */ */
 /* } */
 
+
 .nav-bar {
   display: flex;
   justify-content: space-between;
@@ -72,6 +73,9 @@ html {
   margin-top: 50px;
 }
 
+#logo{
+text-shadow: 0 0 5px var(--sky), 0 0 20px var(--sky), 0 0 30px var(--sky);
+}
 #nav-items {
   color: var(--white);
   margin-right: 30px;
@@ -119,6 +123,11 @@ text-shadow: 0 0 5px var(--sky), 0 0 20px var(--sky), 0 0 30px var(--sky);
   display: flex;
   justify-content: space-between;
 }
+
+#About{
+  font-size: 1em;
+}
+
 .introRight {
   margin-top: 60px;
   width: 65vw;
@@ -253,6 +262,33 @@ text-shadow: 0 0 5px var(--sky), 0 0 20px var(--sky), 0 0 30px var(--sky);
 
 .social_cont > a {
   font-size: 1.2em;
+}
+
+.gitTitle{
+  text-align: center;
+  border-bottom: solid 2px var(--sky);
+  padding-bottom: 10px;
+}
+
+.gitList{
+  border-top: solid 2px var(--sky);
+  padding: 10px;
+}
+
+.gitRepo{
+  margin: 5px;
+  margin-top: 10px;
+}
+
+.gitRepo > a{
+  text-decoration: none;
+}
+
+.gitRepo > a > h4{
+  font-size: 1.2em;
+  font-weight: bolder;
+  color: var(--sky);
+
 }
 
 .gIcon {
