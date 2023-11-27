@@ -174,7 +174,7 @@ text-shadow: 0 0 5px var(--sky), 0 0 20px var(--sky), 0 0 30px var(--sky);
 .blogContent > h4{
   font-size: medium;
   display: inline;
-text-shadow: 0 0 5px var(--sky), 0 0 20px var(--sky), 0 0 30px var(--sky);
+text-shadow: 0 0 1px var(--sky), 0 0 20px var(--sky), 0 0 30px var(--sky);
 }
 
 
@@ -194,6 +194,10 @@ text-shadow: 0 0 5px var(--sky), 0 0 20px var(--sky), 0 0 30px var(--sky);
   max-height: 150px;
 }
 
+.tagsContainer{
+  
+}
+
 .tags {
   display: flex;
   flex-direction: row;
@@ -211,6 +215,7 @@ text-shadow: 0 0 5px var(--sky), 0 0 20px var(--sky), 0 0 30px var(--sky);
   color: var(--base);
   text-decoration: none;
   transition: text-decoration 0.3s ease-in;
+  width: fit-content;
 }
 
 .tags > li::hover {
@@ -384,5 +389,11 @@ text-shadow: 0 0 5px var(--sky), 0 0 20px var(--sky), 0 0 30px var(--sky);
   }
   .slide {
     width: 450px;
+  }
+  .tags {
+    flex-direction: column;
+  }
+  .tags > li {
+    width: fit-content;
   }
 }
