@@ -1,9 +1,8 @@
 function redirect(url) {
   window.location.href = url;
 }
-
-
 // Function to make an HTTP request
+
 function fetchRSS(url, callback) {
   // Making the Instance of XMLHttpRequest
   var xhr = new XMLHttpRequest();
@@ -32,6 +31,7 @@ function parseRSS(xml) {
     tagsArr.forEach(function (tag) {
       tagsString += `<li>${tag}</li>`;
     });
+    
     // console.log("Title: " + title);
     // console.log("Link: " + link);
     // console.log("Description: " + description);
@@ -77,5 +77,33 @@ function parseRSS(xml) {
 
 var rssUrl = "https://redsteadz.github.io/devSensei/index.xml";
 fetchRSS(rssUrl, parseRSS);
+
+var contactBtn = document.querySelector(".contact");
+var modal = document.querySelector(".ContactFormModal");
+var main = document.querySelector(".main")
+
+
+contactBtn.onclick = function() {
+  modal.classList.toggle("active");
+};
+
+document.onclick = function(event) {
+  if (!modal.contains(event.target) && event.target !== contactBtn) {
+    modal.classList.remove("active");
+  }
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

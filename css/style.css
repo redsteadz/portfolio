@@ -87,7 +87,20 @@ html {
   width: 180px;
   position: relative;
   filter: drop-shadow(0 0 0.75rem var(--sky));
+  /* animation: blink-animation 1s steps(5, start) infinite; */
+  /* -webkit-animation: blink-animation 1s steps(5, start) infinite; */
 }
+
+/* @keyframes blink-animation { */
+/*   to { */
+/*     visibility: hidden; */
+/*   } */
+/* } */
+/* @-webkit-keyframes blink-animation { */
+/*   to { */
+/*     visibility: hidden; */
+/*   } */
+/* } */
 
 .name{
   text-align: center;
@@ -284,6 +297,99 @@ text-shadow: 0 0 1px var(--sky), 0 0 20px var(--sky), 0 0 30px var(--sky);
 
 .social_cont > a {
   font-size: 1.2em;
+}
+
+.buttonContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact {
+  background-color: transparent;
+  font-size: 16px;
+  font-family: 'Oxygen Mono';
+  font-weight: bolder;
+  border: 2px solid var(--sky);
+  outline: none;
+  border-radius: 20px;
+  padding: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+.contact:hover{
+  letter-spacing: 4px;
+  background-color: var(--sky);
+  color: var(--base);
+}
+
+.ContactFormModal{
+  height: 40vh;
+  width: 40vw;
+  display: none;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: var(--surface);
+  position: absolute;
+  opacity: 0;
+  left: 50%;
+  top: 50%;
+ transform: translate(-50%, -50%);
+  transition: all 1s ease-in-out;
+  border-radius: 20px;
+}
+.ContactFormModal {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.ContactFormModal.active {
+  display: block;
+  opacity: 1;
+}
+
+.ContactFormModal h1 {
+  text-align: center;
+  color: white;
+}
+
+.ContactForm {
+  margin-top: 20px;
+}
+
+.ContactForm label {
+  display: block;
+  margin-bottom: 8px;
+  color: white;
+}
+
+.ContactForm input,
+.ContactForm textarea {
+  width: 100%;
+  padding: 8px;
+  background-color: var(--surface);
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.ContactForm button {
+  background-color: var(--blue);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.ContactForm button:hover {
+  background-color: var(--darkBlue);
 }
 
 .gitTitle{
