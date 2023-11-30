@@ -326,7 +326,6 @@ text-shadow: 0 0 1px var(--sky), 0 0 20px var(--sky), 0 0 30px var(--sky);
 .ContactFormModal{
   height: 40vh;
   width: 40vw;
-  position: fixed;
   display: none;
   max-width: 400px;
   margin: 0 auto;
@@ -334,7 +333,7 @@ text-shadow: 0 0 1px var(--sky), 0 0 20px var(--sky), 0 0 30px var(--sky);
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background-color: var(--surface);
-  position: absolute;
+  position: fixed;
   opacity: 0;
   left: 50%;
   top: 50%;
